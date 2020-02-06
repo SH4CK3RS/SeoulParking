@@ -20,6 +20,8 @@
 		4251F97923EBDD8500E77555 /* IntroWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4251F97823EBDD8500E77555 /* IntroWorker.swift */; };
 		4251F97B23EBDDA500E77555 /* IntroModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4251F97A23EBDDA500E77555 /* IntroModels.swift */; };
 		4251F97D23EBDE2100E77555 /* IntroRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4251F97C23EBDE2100E77555 /* IntroRouter.swift */; };
+		4251F97F23EBE58B00E77555 /* Styler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4251F97E23EBE58B00E77555 /* Styler.swift */; };
+		4251F98123EBE6CD00E77555 /* UIColor_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4251F98023EBE6CD00E77555 /* UIColor_Extensions.swift */; };
 		645478DE036FDE5624F55FEB /* Pods_SeoulParkingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D54B74E1BC3099A42D498399 /* Pods_SeoulParkingTests.framework */; };
 		7EE60093CDF4131CA2D84E26 /* Pods_SeoulParking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D9FC3C3CDA15FDF1E8681EE /* Pods_SeoulParking.framework */; };
 		FCFF049AEC526494B92DE7C0 /* Pods_SeoulParking_SeoulParkingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B144A5092F1B49460FAD069F /* Pods_SeoulParking_SeoulParkingUITests.framework */; };
@@ -63,6 +65,8 @@
 		4251F97823EBDD8500E77555 /* IntroWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroWorker.swift; sourceTree = "<group>"; };
 		4251F97A23EBDDA500E77555 /* IntroModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroModels.swift; sourceTree = "<group>"; };
 		4251F97C23EBDE2100E77555 /* IntroRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroRouter.swift; sourceTree = "<group>"; };
+		4251F97E23EBE58B00E77555 /* Styler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styler.swift; sourceTree = "<group>"; };
+		4251F98023EBE6CD00E77555 /* UIColor_Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor_Extensions.swift; sourceTree = "<group>"; };
 		427FA9D96689E0D68265E2A1 /* Pods-SeoulParking-SeoulParkingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeoulParking-SeoulParkingUITests.debug.xcconfig"; path = "Target Support Files/Pods-SeoulParking-SeoulParkingUITests/Pods-SeoulParking-SeoulParkingUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		59F0669B18C08A503E04B3AE /* Pods-SeoulParkingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeoulParkingTests.debug.xcconfig"; path = "Target Support Files/Pods-SeoulParkingTests/Pods-SeoulParkingTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7C90D9853F739E21D0F3043F /* Pods-SeoulParking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeoulParking.debug.xcconfig"; path = "Target Support Files/Pods-SeoulParking/Pods-SeoulParking.debug.xcconfig"; sourceTree = "<group>"; };
@@ -156,6 +160,8 @@
 				4251F94523EBD05100E77555 /* Assets.xcassets */,
 				4251F94723EBD05100E77555 /* LaunchScreen.storyboard */,
 				4251F94A23EBD05100E77555 /* Info.plist */,
+				4251F97E23EBE58B00E77555 /* Styler.swift */,
+				4251F98023EBE6CD00E77555 /* UIColor_Extensions.swift */,
 			);
 			path = SeoulParking;
 			sourceTree = "<group>";
@@ -191,8 +197,8 @@
 			children = (
 				4251F97223EBD9B700E77555 /* IntroViewController.swift */,
 				4251F97423EBDD1100E77555 /* IntroInteractor.swift */,
-				4251F97C23EBDE2100E77555 /* IntroRouter.swift */,
 				4251F97623EBDD5200E77555 /* IntroPresenter.swift */,
+				4251F97C23EBDE2100E77555 /* IntroRouter.swift */,
 				4251F97823EBDD8500E77555 /* IntroWorker.swift */,
 				4251F97A23EBDDA500E77555 /* IntroModels.swift */,
 			);
@@ -443,8 +449,10 @@
 				4251F96F23EBD8F900E77555 /* main.swift in Sources */,
 				4251F97723EBDD5200E77555 /* IntroPresenter.swift in Sources */,
 				4251F97B23EBDDA500E77555 /* IntroModels.swift in Sources */,
+				4251F97F23EBE58B00E77555 /* Styler.swift in Sources */,
 				4251F97323EBD9B700E77555 /* IntroViewController.swift in Sources */,
 				4251F97923EBDD8500E77555 /* IntroWorker.swift in Sources */,
+				4251F98123EBE6CD00E77555 /* UIColor_Extensions.swift in Sources */,
 				4251F97523EBDD1100E77555 /* IntroInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

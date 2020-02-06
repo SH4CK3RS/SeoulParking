@@ -9,11 +9,16 @@
 import UIKit
 
 protocol IntroBusinessLogic{
-    
+    func readyView(_ request: Intro.Ready.Request)
 }
 protocol IntroDataStore{
     
 }
 class IntroInteractor: IntroBusinessLogic, IntroDataStore{
     var presenter: IntroPresentationLogic?
+    
+    func readyView(_ request: Intro.Ready.Request) {
+        let response = Intro.Ready.Response()
+        presenter?.presentReady(response)
+    }
 }

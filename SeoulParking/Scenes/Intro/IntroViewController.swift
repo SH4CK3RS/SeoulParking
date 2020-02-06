@@ -10,7 +10,7 @@ import UIKit
 import SnapKit
 
 protocol IntroDisplayLogic: class{
-    
+    func displayReady(_ viewModel: Intro.Ready.ViewModel)
 }
 
 class IntroViewController: UIViewController, IntroDisplayLogic{
@@ -20,16 +20,20 @@ class IntroViewController: UIViewController, IntroDisplayLogic{
     let backgroundImageView: UIImageView = {
         let iv = UIImageView()
         iv.contentMode = .scaleAspectFill
+        iv.image = UIImage(named: "intro_0000")
         return iv
     }()
     let logoImageView: UIImageView = {
         let iv = UIImageView()
         iv.contentMode = .scaleAspectFit
+        iv.image = UIImage(named: "intro_logo")
         return iv
     }()
     
     lazy var startButton: UIButton = {
         let btn = UIButton()
+        btn.layer.cornerRadius = 20
+        btn.layer.masksToBounds = true
         return btn
     }()
     
@@ -65,6 +69,11 @@ class IntroViewController: UIViewController, IntroDisplayLogic{
         setupUI()
         startButton.addTarget(self, action: #selector(startButtonTapped), for: .touchUpInside)
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        let request = Intro.Ready.Request()
+        interactor?.readyView(request)
+    }
     //MARK: - Setup UI
     private func setupUI(){
         self.view.backgroundColor = .white
@@ -88,5 +97,23 @@ class IntroViewController: UIViewController, IntroDisplayLogic{
         }
     }
     
+    // MARK: - Display Ready
+    func displayReady(_ viewModel: Intro.Ready.ViewModel) {
+        // backgroundImageView
+        let bgViewModel = viewModel.backgroundImageView
+        startAnimation(images: bgViewModel.images)
+        // StartButton
+        let sbViewModel = viewModel.startButton
+        startButton.setTitle(sbViewModel.text, for: .normal)
+        startButton.setTitleColor(sbViewModel.textColor, for: .normal)
+        startButton.backgroundColor = sbViewModel.backgroundColor
+    }
     
+    //MARK: Animation
+
+    func startAnimation(images:[UIImage]){
+        backgroundImageView.animationImages = images
+        backgroundImageView.animationDuration = 14.0
+        backgroundImageView.startAnimating()
+    }
 }
