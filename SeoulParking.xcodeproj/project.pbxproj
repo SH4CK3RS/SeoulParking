@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4251F93D23EBD04F00E77555 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4251F93C23EBD04F00E77555 /* AppDelegate.swift */; };
-		4251F94123EBD04F00E77555 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4251F94023EBD04F00E77555 /* ViewController.swift */; };
 		4251F94623EBD05100E77555 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4251F94523EBD05100E77555 /* Assets.xcassets */; };
 		4251F94923EBD05100E77555 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4251F94723EBD05100E77555 /* LaunchScreen.storyboard */; };
 		4251F95423EBD05100E77555 /* SeoulParkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4251F95323EBD05100E77555 /* SeoulParkingTests.swift */; };
@@ -48,7 +47,6 @@
 		33F53959D490BAA3EA5AFB5B /* Pods-SeoulParking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeoulParking.release.xcconfig"; path = "Target Support Files/Pods-SeoulParking/Pods-SeoulParking.release.xcconfig"; sourceTree = "<group>"; };
 		4251F93923EBD04F00E77555 /* SeoulParking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeoulParking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4251F93C23EBD04F00E77555 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4251F94023EBD04F00E77555 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4251F94523EBD05100E77555 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4251F94823EBD05100E77555 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4251F94A23EBD05100E77555 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -156,7 +154,6 @@
 				4251F97023EBD98500E77555 /* Scenes */,
 				4251F96E23EBD8F900E77555 /* main.swift */,
 				4251F93C23EBD04F00E77555 /* AppDelegate.swift */,
-				4251F94023EBD04F00E77555 /* ViewController.swift */,
 				4251F94523EBD05100E77555 /* Assets.xcassets */,
 				4251F94723EBD05100E77555 /* LaunchScreen.storyboard */,
 				4251F94A23EBD05100E77555 /* Info.plist */,
@@ -444,7 +441,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4251F97D23EBDE2100E77555 /* IntroRouter.swift in Sources */,
-				4251F94123EBD04F00E77555 /* ViewController.swift in Sources */,
 				4251F93D23EBD04F00E77555 /* AppDelegate.swift in Sources */,
 				4251F96F23EBD8F900E77555 /* main.swift in Sources */,
 				4251F97723EBDD5200E77555 /* IntroPresenter.swift in Sources */,

@@ -17,17 +17,10 @@ enum Intro{
             
         }
         struct ViewModel{
-            struct BackgroundImageViewModel {
+            struct Animation {
                 var images: [UIImage]
             }
-            struct StartButtonModel{
-                var text: String
-                var textColor: UIColor
-                var backgroundColor: UIColor
-            }
-            
-            var backgroundImageView: BackgroundImageViewModel
-            var startButton: StartButtonModel
+            var animationData: Animation
         }
     }
 }

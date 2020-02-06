@@ -34,6 +34,9 @@ class IntroViewController: UIViewController, IntroDisplayLogic{
         let btn = UIButton()
         btn.layer.cornerRadius = 20
         btn.layer.masksToBounds = true
+        btn.setTitle("시작하기", for: .normal)
+        btn.setTitleColor(Styler.Color.Main.tint, for: .normal)
+        btn.backgroundColor = Styler.Color.Main.default
         return btn
     }()
     
@@ -100,13 +103,8 @@ class IntroViewController: UIViewController, IntroDisplayLogic{
     // MARK: - Display Ready
     func displayReady(_ viewModel: Intro.Ready.ViewModel) {
         // backgroundImageView
-        let bgViewModel = viewModel.backgroundImageView
+        let bgViewModel = viewModel.animationData
         startAnimation(images: bgViewModel.images)
-        // StartButton
-        let sbViewModel = viewModel.startButton
-        startButton.setTitle(sbViewModel.text, for: .normal)
-        startButton.setTitleColor(sbViewModel.textColor, for: .normal)
-        startButton.backgroundColor = sbViewModel.backgroundColor
     }
     
     //MARK: Animation
