@@ -17,6 +17,31 @@ class IntroViewController: UIViewController, IntroDisplayLogic{
     var interactor: IntroBusinessLogic?
     var router: (NSObjectProtocol & IntroRoutingLogic & IntroDataPassing)?
     
+    //MARK: Object LifeCycle
+    
+    init() {
+        super.init(nibName: nil, bundle: nil)
+        setup()
+    }
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        setup()
+    }
+    
+    func setup(){
+        let viewController = self
+        let interactor = IntroInteractor()
+        let presenter = IntroPresenter()
+        let router = IntroRouter()
+        viewController.interactor = interactor
+        viewController.router = router
+        interactor.presenter = presenter
+        presenter.viewController = viewController
+        router.viewController = viewController
+        router.dataStore = interactor
+    }
+    
+    //MARK: Views
     let backgroundImageView: UIImageView = {
         let iv = UIImageView()
         iv.contentMode = .scaleAspectFill
@@ -45,28 +70,7 @@ class IntroViewController: UIViewController, IntroDisplayLogic{
         
     }
     
-    init() {
-        super.init(nibName: nil, bundle: nil)
-        setup()
-    }
-    required init?(coder: NSCoder) {
-        super.init(coder: coder)
-        setup()
-    }
-    
-    func setup(){
-        let viewController = self
-        let interactor = IntroInteractor()
-        let presenter = IntroPresenter()
-        let router = IntroRouter()
-        viewController.interactor = interactor
-        viewController.router = router
-        interactor.presenter = presenter
-        presenter.viewController = viewController
-        router.viewController = viewController
-        router.dataStore = interactor
-    }
-    
+    //MARK: - VC Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
@@ -77,6 +81,7 @@ class IntroViewController: UIViewController, IntroDisplayLogic{
         let request = Intro.Ready.Request()
         interactor?.readyView(request)
     }
+    
     //MARK: - Setup UI
     private func setupUI(){
         self.view.backgroundColor = .white
@@ -103,11 +108,11 @@ class IntroViewController: UIViewController, IntroDisplayLogic{
     // MARK: - Display Ready
     func displayReady(_ viewModel: Intro.Ready.ViewModel) {
         // backgroundImageView
-        let bgViewModel = viewModel.animationData
-        startAnimation(images: bgViewModel.images)
+        let images = viewModel.images
+        startAnimation(images: images)
     }
     
-    //MARK: Animation
+    //MARK: - Animation
 
     func startAnimation(images:[UIImage]){
         backgroundImageView.animationImages = images

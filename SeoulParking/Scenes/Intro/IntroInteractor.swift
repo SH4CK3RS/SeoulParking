@@ -16,9 +16,10 @@ protocol IntroDataStore{
 }
 class IntroInteractor: IntroBusinessLogic, IntroDataStore{
     var presenter: IntroPresentationLogic?
-    
+    var worker = IntroWorker()
     func readyView(_ request: Intro.Ready.Request) {
-        let response = Intro.Ready.Response()
+        let images = worker.getAnimationImages()
+        let response = Intro.Ready.Response(images: images)
         presenter?.presentReady(response)
     }
 }

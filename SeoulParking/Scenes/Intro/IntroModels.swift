@@ -14,13 +14,10 @@ enum Intro{
             
         }
         struct Response{
-            
+            var images: [UIImage]
         }
         struct ViewModel{
-            struct Animation {
-                var images: [UIImage]
-            }
-            var animationData: Animation
+            var images: [UIImage]
         }
     }
 }
