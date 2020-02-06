@@ -62,6 +62,7 @@ class IntroViewController: UIViewController, IntroDisplayLogic{
         btn.setTitle("시작하기", for: .normal)
         btn.setTitleColor(Styler.Color.Main.tint, for: .normal)
         btn.backgroundColor = Styler.Color.Main.default
+        btn.addTarget(self, action: #selector(callLogin), for: .touchUpInside)
         return btn
     }()
     
@@ -118,5 +119,10 @@ class IntroViewController: UIViewController, IntroDisplayLogic{
         backgroundImageView.animationImages = images
         backgroundImageView.animationDuration = 14.0
         backgroundImageView.startAnimating()
+    }
+}
+extension IntroViewController{
+    @objc func callLogin(){
+        router?.routeToLogin()
     }
 }

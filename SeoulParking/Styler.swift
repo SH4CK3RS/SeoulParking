@@ -40,73 +40,78 @@ enum Styler{
             static let accent = UIColor.init(hexString: "#FF4081")
 
         }
-//
-//        //Purple
-//        let purpleDarkPrimary =                         UIColor.init(hexString: "#7B1FA2")
-//        let purpleLightPrimary =                        UIColor.init(hexString: "#E1BEE7")
-//        let purplePrimary =                             UIColor.init(hexString: "#9C27B0")
-//        let purpleAccent =                              UIColor.init(hexString: "#E040FB")
-//
-//        //DeepPurple
-//        let deepPurpleDarkPrimary =                     UIColor.init(hexString: "#512DA8")
-//        let deepPurpleLightPrimary =                    UIColor.init(hexString: "#D1C4E9")
-//        let deepPurplePrimary =                         UIColor.init(hexString: "#673AB7")
-//        let deepPurpleAccent =                          UIColor.init(hexString: "#7C4DFF")
-//
-//        //Indigo
-//        let indigoDarkPrimary =                         UIColor.init(hexString: "#303F9F")
-//        let indigoLightPrimary =                        UIColor.init(hexString: "#C5CAE9")
-//        let indigoPrimary =                             UIColor.init(hexString: "#3F51B5")
-//        let indigoAccent =                              UIColor.init(hexString: "#536DFE")
-//
-//        //Blue
-//        let blueDarkPrimary =                           UIColor.init(hexString: "#1976D2")
-//        let blueLightPrimary =                          UIColor.init(hexString: "#BBDEFB")
-//        let bluePrimary =                               UIColor.init(hexString: "#2196F3")
-//        let blueAccent =                                UIColor.init(hexString: "#448AFF")
-//
-//        //LightBlue
-//        let lightBlueDarkPrimary =                      UIColor.init(hexString: "#0288D1")
-//        let lightBlueLightPrimary =                     UIColor.init(hexString: "#B3E5FC")
-//        let lightBluePrimary =                          UIColor.init(hexString: "#03A9F4")
-//        let lightBlueAccent =                           UIColor.init(hexString: "#03A9F4")
-//
-//        //Cyan
-//        let cyanDarkPrimary =                           UIColor.init(hexString: "#0097A7")
-//        let cyanLightPrimary =                          UIColor.init(hexString: "#BBDEFB")
-//        let cyanPrimary =                               UIColor.init(hexString: "#2196F3")
-//        let cyanAccent =                                UIColor.init(hexString: "#448AFF")
-//
-//        //Teal
-//        let tealDarkPrimary =                           UIColor.init(hexString: "#00796B")
-//        let tealLightPrimary =                          UIColor.init(hexString: "#B2DFDB")
-//        let tealPrimary =                               UIColor.init(hexString: "#009688")
-//        let tealAccent =                                UIColor.init(hexString: "#009688")
-//
-//        //Green
-//        let greenDarkPrimary =                          UIColor.init(hexString: "#388E3C")
-//        let greenLightPrimary =                         UIColor.init(hexString: "#C8E6C9")
-//        let greenPrimary =                              UIColor.init(hexString: "#4CAF50")
-//        let greenAccent =                               UIColor.init(hexString: "#4CAF50")
-//
-//        //LightGreen
-//        let lightGreenDarkPrimary =                     UIColor.init(hexString: "#AFB42B")
-//        let lightGreenLightPrimary =                    UIColor.init(hexString: "#F0F4C3")
-//        let lightGreenPrimary =                         UIColor.init(hexString: "#CDDC39")
-//        let lightGreenAccent =                          UIColor.init(hexString: "#CDDC39")
-//
-//        //Lime
-//        let limeDarkPrimary =                           UIColor.init(hexString: "#00796B")
-//        let limeLightPrimary =                          UIColor.init(hexString: "#B2DFDB")
-//        let limePrimary =                               UIColor.init(hexString: "#009688")
-//        let limeAccent =                                UIColor.init(hexString: "#009688")
-//
-//        //Yellow
-//        let yellowDarkPrimary =                         UIColor.init(hexString: "#FBC02D")
-//        let yellowLightPrimary =                        UIColor.init(hexString: "#FFF9C4")
-//        let yellowPrimary =                             UIColor.init(hexString: "#FFEB3B")
-//        let yellowAccent =                              UIColor.init(hexString: "#FFEB3B")
-//
+
+        enum Purple{
+            static let darkPrimary =                         UIColor.init(hexString: "#7B1FA2")
+            static let lightPrimary =                        UIColor.init(hexString: "#E1BEE7")
+            static let primary =                             UIColor.init(hexString: "#9C27B0")
+            static let accent =                              UIColor.init(hexString: "#E040FB")
+
+        }
+        enum DeepPurple{
+            static let darkPrimary =                     UIColor.init(hexString: "#512DA8")
+            static let lightPrimary =                    UIColor.init(hexString: "#D1C4E9")
+            static let primary =                         UIColor.init(hexString: "#673AB7")
+            static let accent =                          UIColor.init(hexString: "#7C4DFF")
+
+        }
+        enum Indigo{
+            static let darkPrimary =                         UIColor.init(hexString: "#303F9F")
+            static let lightPrimary =                        UIColor.init(hexString: "#C5CAE9")
+            static let primary =                             UIColor.init(hexString: "#3F51B5")
+            static let accent =                              UIColor.init(hexString: "#536DFE")
+        }
+        enum Blue{
+            static let darkPrimary =                           UIColor.init(hexString: "#1976D2")
+            static let lightPrimary =                          UIColor.init(hexString: "#BBDEFB")
+            static let primary =                               UIColor.init(hexString: "#2196F3")
+            static let accent =                                UIColor.init(hexString: "#448AFF")
+        }
+        enum LightBlue{
+            static let darkPrimary =                      UIColor.init(hexString: "#0288D1")
+            static let lightPrimary =                     UIColor.init(hexString: "#B3E5FC")
+            static let primary =                          UIColor.init(hexString: "#03A9F4")
+            static let accent =                           UIColor.init(hexString: "#03A9F4")
+        }
+        enum Cyan{
+            static let darkPrimary =                           UIColor.init(hexString: "#0097A7")
+            static let lightPrimary =                          UIColor.init(hexString: "#BBDEFB")
+            static let primary =                               UIColor.init(hexString: "#2196F3")
+            static let accent =                                UIColor.init(hexString: "#448AFF")
+        }
+        enum Teal{
+            static let darkPrimary =                           UIColor.init(hexString: "#00796B")
+            static let lightPrimary =                          UIColor.init(hexString: "#B2DFDB")
+            static let primary =                               UIColor.init(hexString: "#009688")
+            static let accent =                                UIColor.init(hexString: "#009688")
+        }
+        enum Green{
+            static let darkPrimary =                          UIColor.init(hexString: "#388E3C")
+            static let lightPrimary =                         UIColor.init(hexString: "#C8E6C9")
+            static let primary =                              UIColor.init(hexString: "#4CAF50")
+            static let accent =                               UIColor.init(hexString: "#4CAF50")
+        }
+        enum LightGreen{
+            static let darkPrimary =                     UIColor.init(hexString: "#AFB42B")
+            static let lightPrimary =                    UIColor.init(hexString: "#F0F4C3")
+            static let primary =                         UIColor.init(hexString: "#CDDC39")
+            static let accent =                          UIColor.init(hexString: "#CDDC39")
+        }
+        enum Lime{
+            static let darkPrimary =                           UIColor.init(hexString: "#00796B")
+            static let lightPrimary =                          UIColor.init(hexString: "#B2DFDB")
+            static let primary =                               UIColor.init(hexString: "#009688")
+            static let accent =                                UIColor.init(hexString: "#009688")
+        }
+
+        enum Yellow{
+            static let darkPrimary =                         UIColor.init(hexString: "#FBC02D")
+            static let yellowLightPrimary =                        UIColor.init(hexString: "#FFF9C4")
+            static let yellowPrimary =                             UIColor.init(hexString: "#FFEB3B")
+            static let yellowAccent =                              UIColor.init(hexString: "#FFEB3B")
+        }
+
+        
 //        //Amber
 //        let amberDarkPrimary =                          UIColor.init(hexString: "#FFA000")
 //        let amberLightPrimary =                         UIColor.init(hexString: "#FFECB3")

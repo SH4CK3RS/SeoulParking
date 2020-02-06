@@ -9,7 +9,7 @@
 import UIKit
 
 @objc protocol IntroRoutingLogic{
-    
+    func routeToLogin()
 }
 
 protocol IntroDataPassing{
@@ -21,9 +21,17 @@ class IntroRouter: NSObject, IntroRoutingLogic, IntroDataPassing{
     var dataStore: IntroDataStore?
     
     //MARK: Routing Logic
-    
+    func routeToLogin() {
+        let destinationVC = LoginViewController()
+//        var destinationDS = destinationVC.router!.dataStore!
+        navigateToLogin(source: viewController!, destination: destinationVC)
+    }
     //MARK: Navigation Logic
-    
+    func navigateToLogin(source: IntroViewController, destination: LoginViewController){
+        destination.modalPresentationStyle = .overFullScreen
+        destination.modalTransitionStyle = .crossDissolve
+        source.present(destination, animated: false, completion: nil)
+    }
     //MARK: Data Passing Logic
 }
 
