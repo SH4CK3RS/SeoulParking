@@ -8,13 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		4251F93D23EBD04F00E77555 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4251F93C23EBD04F00E77555 /* AppDelegate.swift */; };
-		4251F93F23EBD04F00E77555 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4251F93E23EBD04F00E77555 /* SceneDelegate.swift */; };
 		4251F94123EBD04F00E77555 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4251F94023EBD04F00E77555 /* ViewController.swift */; };
-		4251F94423EBD04F00E77555 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4251F94223EBD04F00E77555 /* Main.storyboard */; };
 		4251F94623EBD05100E77555 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4251F94523EBD05100E77555 /* Assets.xcassets */; };
 		4251F94923EBD05100E77555 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4251F94723EBD05100E77555 /* LaunchScreen.storyboard */; };
 		4251F95423EBD05100E77555 /* SeoulParkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4251F95323EBD05100E77555 /* SeoulParkingTests.swift */; };
 		4251F95F23EBD05100E77555 /* SeoulParkingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4251F95E23EBD05100E77555 /* SeoulParkingUITests.swift */; };
+		4251F96F23EBD8F900E77555 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4251F96E23EBD8F900E77555 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,9 +36,7 @@
 /* Begin PBXFileReference section */
 		4251F93923EBD04F00E77555 /* SeoulParking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeoulParking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4251F93C23EBD04F00E77555 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4251F93E23EBD04F00E77555 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4251F94023EBD04F00E77555 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4251F94323EBD04F00E77555 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4251F94523EBD05100E77555 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4251F94823EBD05100E77555 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4251F94A23EBD05100E77555 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +46,7 @@
 		4251F95A23EBD05100E77555 /* SeoulParkingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SeoulParkingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4251F95E23EBD05100E77555 /* SeoulParkingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeoulParkingUITests.swift; sourceTree = "<group>"; };
 		4251F96023EBD05100E77555 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4251F96E23EBD8F900E77555 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +97,9 @@
 		4251F93B23EBD04F00E77555 /* SeoulParking */ = {
 			isa = PBXGroup;
 			children = (
+				4251F96E23EBD8F900E77555 /* main.swift */,
 				4251F93C23EBD04F00E77555 /* AppDelegate.swift */,
-				4251F93E23EBD04F00E77555 /* SceneDelegate.swift */,
 				4251F94023EBD04F00E77555 /* ViewController.swift */,
-				4251F94223EBD04F00E77555 /* Main.storyboard */,
 				4251F94523EBD05100E77555 /* Assets.xcassets */,
 				4251F94723EBD05100E77555 /* LaunchScreen.storyboard */,
 				4251F94A23EBD05100E77555 /* Info.plist */,
@@ -234,7 +231,6 @@
 			files = (
 				4251F94923EBD05100E77555 /* LaunchScreen.storyboard in Resources */,
 				4251F94623EBD05100E77555 /* Assets.xcassets in Resources */,
-				4251F94423EBD04F00E77555 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,7 +257,7 @@
 			files = (
 				4251F94123EBD04F00E77555 /* ViewController.swift in Sources */,
 				4251F93D23EBD04F00E77555 /* AppDelegate.swift in Sources */,
-				4251F93F23EBD04F00E77555 /* SceneDelegate.swift in Sources */,
+				4251F96F23EBD8F900E77555 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +293,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4251F94223EBD04F00E77555 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4251F94323EBD04F00E77555 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4251F94723EBD05100E77555 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
