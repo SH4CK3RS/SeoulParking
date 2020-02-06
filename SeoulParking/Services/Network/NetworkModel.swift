@@ -34,7 +34,7 @@ public enum NetworkModel{
 
 extension NetworkModel: TargetType{
     public var baseURL: URL{
-        let url = "http://ec2-13-209-114-153.ap-northeast-2.compute.amazonaws.com:517/api"
+        let url = ""
         return URL(string: url)!
     }
     
