@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,15 @@
 		4251F95423EBD05100E77555 /* SeoulParkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4251F95323EBD05100E77555 /* SeoulParkingTests.swift */; };
 		4251F95F23EBD05100E77555 /* SeoulParkingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4251F95E23EBD05100E77555 /* SeoulParkingUITests.swift */; };
 		4251F96F23EBD8F900E77555 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4251F96E23EBD8F900E77555 /* main.swift */; };
+		4251F97323EBD9B700E77555 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4251F97223EBD9B700E77555 /* IntroViewController.swift */; };
+		4251F97523EBDD1100E77555 /* IntroInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4251F97423EBDD1100E77555 /* IntroInteractor.swift */; };
+		4251F97723EBDD5200E77555 /* IntroPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4251F97623EBDD5200E77555 /* IntroPresenter.swift */; };
+		4251F97923EBDD8500E77555 /* IntroWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4251F97823EBDD8500E77555 /* IntroWorker.swift */; };
+		4251F97B23EBDDA500E77555 /* IntroModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4251F97A23EBDDA500E77555 /* IntroModels.swift */; };
+		4251F97D23EBDE2100E77555 /* IntroRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4251F97C23EBDE2100E77555 /* IntroRouter.swift */; };
+		645478DE036FDE5624F55FEB /* Pods_SeoulParkingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D54B74E1BC3099A42D498399 /* Pods_SeoulParkingTests.framework */; };
+		7EE60093CDF4131CA2D84E26 /* Pods_SeoulParking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D9FC3C3CDA15FDF1E8681EE /* Pods_SeoulParking.framework */; };
+		FCFF049AEC526494B92DE7C0 /* Pods_SeoulParking_SeoulParkingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B144A5092F1B49460FAD069F /* Pods_SeoulParking_SeoulParkingUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		33F53959D490BAA3EA5AFB5B /* Pods-SeoulParking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeoulParking.release.xcconfig"; path = "Target Support Files/Pods-SeoulParking/Pods-SeoulParking.release.xcconfig"; sourceTree = "<group>"; };
 		4251F93923EBD04F00E77555 /* SeoulParking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeoulParking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4251F93C23EBD04F00E77555 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4251F94023EBD04F00E77555 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +57,20 @@
 		4251F95E23EBD05100E77555 /* SeoulParkingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeoulParkingUITests.swift; sourceTree = "<group>"; };
 		4251F96023EBD05100E77555 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4251F96E23EBD8F900E77555 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		4251F97223EBD9B700E77555 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		4251F97423EBDD1100E77555 /* IntroInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroInteractor.swift; sourceTree = "<group>"; };
+		4251F97623EBDD5200E77555 /* IntroPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroPresenter.swift; sourceTree = "<group>"; };
+		4251F97823EBDD8500E77555 /* IntroWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroWorker.swift; sourceTree = "<group>"; };
+		4251F97A23EBDDA500E77555 /* IntroModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroModels.swift; sourceTree = "<group>"; };
+		4251F97C23EBDE2100E77555 /* IntroRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroRouter.swift; sourceTree = "<group>"; };
+		427FA9D96689E0D68265E2A1 /* Pods-SeoulParking-SeoulParkingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeoulParking-SeoulParkingUITests.debug.xcconfig"; path = "Target Support Files/Pods-SeoulParking-SeoulParkingUITests/Pods-SeoulParking-SeoulParkingUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		59F0669B18C08A503E04B3AE /* Pods-SeoulParkingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeoulParkingTests.debug.xcconfig"; path = "Target Support Files/Pods-SeoulParkingTests/Pods-SeoulParkingTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7C90D9853F739E21D0F3043F /* Pods-SeoulParking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeoulParking.debug.xcconfig"; path = "Target Support Files/Pods-SeoulParking/Pods-SeoulParking.debug.xcconfig"; sourceTree = "<group>"; };
+		9D9FC3C3CDA15FDF1E8681EE /* Pods_SeoulParking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SeoulParking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B144A5092F1B49460FAD069F /* Pods_SeoulParking_SeoulParkingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SeoulParking_SeoulParkingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C70950AB14A91C1F5B3A583A /* Pods-SeoulParking-SeoulParkingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeoulParking-SeoulParkingUITests.release.xcconfig"; path = "Target Support Files/Pods-SeoulParking-SeoulParkingUITests/Pods-SeoulParking-SeoulParkingUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D1974C97654DDCB14CACBDED /* Pods-SeoulParkingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeoulParkingTests.release.xcconfig"; path = "Target Support Files/Pods-SeoulParkingTests/Pods-SeoulParkingTests.release.xcconfig"; sourceTree = "<group>"; };
+		D54B74E1BC3099A42D498399 /* Pods_SeoulParkingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SeoulParkingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EE60093CDF4131CA2D84E26 /* Pods_SeoulParking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				645478DE036FDE5624F55FEB /* Pods_SeoulParkingTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +94,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCFF049AEC526494B92DE7C0 /* Pods_SeoulParking_SeoulParkingUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00A4661D79A762B742932AE9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D9FC3C3CDA15FDF1E8681EE /* Pods_SeoulParking.framework */,
+				B144A5092F1B49460FAD069F /* Pods_SeoulParking_SeoulParkingUITests.framework */,
+				D54B74E1BC3099A42D498399 /* Pods_SeoulParkingTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		372D8DA63624102CEEF6453D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7C90D9853F739E21D0F3043F /* Pods-SeoulParking.debug.xcconfig */,
+				33F53959D490BAA3EA5AFB5B /* Pods-SeoulParking.release.xcconfig */,
+				427FA9D96689E0D68265E2A1 /* Pods-SeoulParking-SeoulParkingUITests.debug.xcconfig */,
+				C70950AB14A91C1F5B3A583A /* Pods-SeoulParking-SeoulParkingUITests.release.xcconfig */,
+				59F0669B18C08A503E04B3AE /* Pods-SeoulParkingTests.debug.xcconfig */,
+				D1974C97654DDCB14CACBDED /* Pods-SeoulParkingTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		4251F93023EBD04F00E77555 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +131,8 @@
 				4251F95223EBD05100E77555 /* SeoulParkingTests */,
 				4251F95D23EBD05100E77555 /* SeoulParkingUITests */,
 				4251F93A23EBD04F00E77555 /* Products */,
+				372D8DA63624102CEEF6453D /* Pods */,
+				00A4661D79A762B742932AE9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +149,7 @@
 		4251F93B23EBD04F00E77555 /* SeoulParking */ = {
 			isa = PBXGroup;
 			children = (
+				4251F97023EBD98500E77555 /* Scenes */,
 				4251F96E23EBD8F900E77555 /* main.swift */,
 				4251F93C23EBD04F00E77555 /* AppDelegate.swift */,
 				4251F94023EBD04F00E77555 /* ViewController.swift */,
@@ -125,6 +178,27 @@
 			path = SeoulParkingUITests;
 			sourceTree = "<group>";
 		};
+		4251F97023EBD98500E77555 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				4251F97123EBD9A700E77555 /* Intro */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		4251F97123EBD9A700E77555 /* Intro */ = {
+			isa = PBXGroup;
+			children = (
+				4251F97223EBD9B700E77555 /* IntroViewController.swift */,
+				4251F97423EBDD1100E77555 /* IntroInteractor.swift */,
+				4251F97C23EBDE2100E77555 /* IntroRouter.swift */,
+				4251F97623EBDD5200E77555 /* IntroPresenter.swift */,
+				4251F97823EBDD8500E77555 /* IntroWorker.swift */,
+				4251F97A23EBDDA500E77555 /* IntroModels.swift */,
+			);
+			path = Intro;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +206,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4251F96323EBD05100E77555 /* Build configuration list for PBXNativeTarget "SeoulParking" */;
 			buildPhases = (
+				5F2FD68D7E31DA1365B21132 /* [CP] Check Pods Manifest.lock */,
 				4251F93523EBD04F00E77555 /* Sources */,
 				4251F93623EBD04F00E77555 /* Frameworks */,
 				4251F93723EBD04F00E77555 /* Resources */,
+				9259715D9C8C991B8FC12A34 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +225,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4251F96623EBD05100E77555 /* Build configuration list for PBXNativeTarget "SeoulParkingTests" */;
 			buildPhases = (
+				A91483277A9C7599A8FC4B9E /* [CP] Check Pods Manifest.lock */,
 				4251F94B23EBD05100E77555 /* Sources */,
 				4251F94C23EBD05100E77555 /* Frameworks */,
 				4251F94D23EBD05100E77555 /* Resources */,
@@ -167,9 +244,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4251F96923EBD05100E77555 /* Build configuration list for PBXNativeTarget "SeoulParkingUITests" */;
 			buildPhases = (
+				8D7FA213DDFEBA1FDA031A9D /* [CP] Check Pods Manifest.lock */,
 				4251F95623EBD05100E77555 /* Sources */,
 				4251F95723EBD05100E77555 /* Frameworks */,
 				4251F95823EBD05100E77555 /* Resources */,
+				33CBA14E74E190F88C6218F1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -250,14 +329,123 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		33CBA14E74E190F88C6218F1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SeoulParking-SeoulParkingUITests/Pods-SeoulParking-SeoulParkingUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SeoulParking-SeoulParkingUITests/Pods-SeoulParking-SeoulParkingUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SeoulParking-SeoulParkingUITests/Pods-SeoulParking-SeoulParkingUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F2FD68D7E31DA1365B21132 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SeoulParking-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D7FA213DDFEBA1FDA031A9D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SeoulParking-SeoulParkingUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9259715D9C8C991B8FC12A34 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SeoulParking/Pods-SeoulParking-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SeoulParking/Pods-SeoulParking-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SeoulParking/Pods-SeoulParking-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A91483277A9C7599A8FC4B9E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SeoulParkingTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4251F93523EBD04F00E77555 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4251F97D23EBDE2100E77555 /* IntroRouter.swift in Sources */,
 				4251F94123EBD04F00E77555 /* ViewController.swift in Sources */,
 				4251F93D23EBD04F00E77555 /* AppDelegate.swift in Sources */,
 				4251F96F23EBD8F900E77555 /* main.swift in Sources */,
+				4251F97723EBDD5200E77555 /* IntroPresenter.swift in Sources */,
+				4251F97B23EBDDA500E77555 /* IntroModels.swift in Sources */,
+				4251F97323EBD9B700E77555 /* IntroViewController.swift in Sources */,
+				4251F97923EBDD8500E77555 /* IntroWorker.swift in Sources */,
+				4251F97523EBDD1100E77555 /* IntroInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +608,7 @@
 		};
 		4251F96423EBD05100E77555 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C90D9853F739E21D0F3043F /* Pods-SeoulParking.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -438,6 +627,7 @@
 		};
 		4251F96523EBD05100E77555 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33F53959D490BAA3EA5AFB5B /* Pods-SeoulParking.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -456,6 +646,7 @@
 		};
 		4251F96723EBD05100E77555 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59F0669B18C08A503E04B3AE /* Pods-SeoulParkingTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -478,6 +669,7 @@
 		};
 		4251F96823EBD05100E77555 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1974C97654DDCB14CACBDED /* Pods-SeoulParkingTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -500,6 +692,7 @@
 		};
 		4251F96A23EBD05100E77555 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 427FA9D96689E0D68265E2A1 /* Pods-SeoulParking-SeoulParkingUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -520,6 +713,7 @@
 		};
 		4251F96B23EBD05100E77555 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C70950AB14A91C1F5B3A583A /* Pods-SeoulParking-SeoulParkingUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
